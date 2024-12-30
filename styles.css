@@ -1,0 +1,46 @@
+/* Custom scrollbar for cart items */
+#cart-items::-webkit-scrollbar {
+    width: 6px;
+}
+
+#cart-items::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#cart-items::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+#cart-items::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Animations */
+.slide-in {
+    transform: translateX(0) !important;
+}
+
+.fade-in {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+/* Product card hover effects */
+.product-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover animations */
+.button-hover {
+    transition: transform 0.1s;
+}
+
+.button-hover:active {
+    transform: scale(0.95);
+}
